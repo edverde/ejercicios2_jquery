@@ -1,0 +1,116 @@
+
+/*--------------------font-------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&display=swap');
+/*-----------------------reset----------------------------------------------------------*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/*-----------------------------------------Raíz--------------------------------------------*/
+:root{
+    --primario:#eaece5; /*blanco roto*/
+    --secundario:#b2c2bf; /*azúl grisáceo*/
+    --terciario:#3b3a30; /*verde oscuro*/
+    --cuaternario:#c0ded9; /*verde claro*/
+}
+/*--------------------------------Etiquetas de título--------------------------------*/
+h2, h3, p {
+    color:var(--terciario);
+    padding: 20px;
+    width: 80%;
+    margin:auto;
+}
+/*--------------------------------- listas ---------------------------------- */
+ol{
+    width: 90px; 
+    margin: auto;
+    font-size: 1rem;		
+}
+/*------------------------------------tablas----------------------------------------*/
+table{
+    width: 80%;
+    margin:auto;
+    border: 2px solid var(--terciario);
+    border-collapse: collapse;
+}
+td {
+    padding: 20px;
+}	
+/*-------------------------------boton----------------------------------------*/
+button {
+    width: 100px;
+    display: inline-block;
+    padding:10px;
+    border-radius: 4px;
+    background-color: var(--terciario);
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    margin:20px auto 20px;
+    border: none;
+    color:var(--primario);
+}
+button:hover{
+    background-color: #0d0d0d;
+    transition: 1s;
+}
+/*------------------------------body---------------------------------*/
+body{
+    font-family: 'Arimo', sans-serif;
+    background-color: var(--secundario);
+    text-align: center;	
+}
+/*------------------------header----------------------------------*/
+header{
+    background-color: var(--terciario);
+    padding: 20px 20px 0px;
+    color: #f0f0f0;
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+}
+.fotoEd{		  	
+    border-radius:50px;
+}
+/*---------------------------------------menu------------------------------*/
+#menu {	
+    background-color: var(--terciario);
+    position: sticky;
+    top: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;	
+    z-index: 1000;			
+}
+#menu a{
+    text-decoration: none;
+    color:var(--primario);
+    display: block;
+    width: 100px;
+    border:1px solid var(--primario);
+    margin-right: 10px;
+}
+#menu a:hover{
+    background-color: #0d0d0d;
+    transition: 1s;
+}
+/*------------------------main------------------------------------------------*/
+main{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0px 60px;	
+    background-color: var(--primario);			
+}	
+/*----------------------------- ejercicio 1 ---------------------------------------------*/
+
+/*------------------------------------ footer ----------------------------------------------*/
+footer {
+    padding: 80px;
+    background-color: var(--terciario);
+    color:var(--primario);
+}

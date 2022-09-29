@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AF2 - UF1306 Selectores y efectos 1 jQuery</title>
+	<script src="jquery-3.6.1.min.js"></script> 
+	<script src="main.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="estilos.css" rel="stylesheet" type="text/css">
+	
+	<!-- ------------------------- animacion anclas ------------------------------------- -->
+	<!-- <script>
+		$(document).ready(function() {
+			$('a[href^="#"]').click(function() {
+		    var destino = $(this.hash);
+		    if (destino.length == 0) {
+		      destino = $('a[name="' + this.hash.substr(1) + '"]');
+		    }
+		    if (destino.length == 0) {
+		      destino = $('html');
+		    }
+		    $('html, body').animate({ scrollTop: destino.offset().top - 225 }, 1000);
+		    return false;
+		  });
+		});
+	</script>	 -->
+
+</head>
+<body>
+	<!-- --------------------------------------------header-------------------------------------- -->
+<header>
+	<img src="img/logo.png" alt="logoJquery" width="150">
+	<h1>Ejercicios jQuery</h1>
+	<div>
+		<figure>
+		<img src="img/ed2.jpg" alt="alumno" class="fotoEd" width="120">
+		<figcaption>Eduard Valls Roca</figcaption>
+		</figure>
+		<!-- <span class="icon_burger">&#9776;</span> -->
+	</div>
+</header>
+<!-- --------------------------------Navegador------------------------------- -->
+<nav id="menu">
+	<a href="#ej1">EJ.1</a>
+	<a href="#ej2">EJ.2</a>
+	<a href="#ej3">EJ.3</a>
+	<a href="#ej4">EJ.4</a>
+	<a href="#ej5">EJ.5</a>
+	<a href="#ej6">EJ.6</a>
+	<!-- <a href="#ej7">EJ.7</a>
+	<a href="#ej8">EJ.8</a>
+	<a href="#ej9">EJ.9</a>
+	<a href="#ej10">EJ.10</a>
+	<a href="#ej11">EJ.11</a>	 -->
+</nav>
+<main>	
+	<!--  ejercicio 1  -->
+	<section id="ej1">
+		<h2>1. Crea un botón y un contenedor, cuando pulsemos el botón debe desaparecer el contenedor, si pulsamos de nuevo aparecera.</h2>
+		<button class="btn1">Ocultar texto</button>
+		
+		<div class="container1">
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, expedita?</p>
+		</div>	
+	</section>
+	<!-- ejercicio 2  -->
+	<!-- <section id="ej2">
+		<h2>2. </h2>
+	</section> -->
+</main>
+<footer>
+	<small>29 de Septiembre de 2022</small>
+</footer>
+</body>
+</html>
