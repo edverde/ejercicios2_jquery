@@ -71,5 +71,49 @@ jQuery(function() {
       names.splice(0, names.length);
       $('#list>li').remove();
     })
-    
+
+    //ejercicio 4
+
+    $('#up').click(function(){
+      const y = parseInt($('#child').css('top'));
+      if(y -40 > 0){
+        $('#child').css('top', y -40);
+      }else{
+        $('#child').css('top',  0);
+      }
+    })
+
+    $('#down').click(function(){
+      const y = parseInt($('#child').css('top'));
+      const parentHeight = parseInt($('#rango').innerHeight());
+      const childHeight = parseInt($('#child').innerHeight());
+
+      if((y+40) < (parentHeight - childHeight)){
+        $('#child').css('top',y+ 40);
+      }else{
+        $('#child').css('top', (parentHeight - childHeight));
+      }
+    })
+
+    $('#left').click(function(){
+      const x = parseInt($('#child').css('left'));
+      if(x -40 > 0){
+        $('#child').css('left', x -40);
+      }else{
+        $('#child').css('left',  0);
+      }
+    })
+
+    $('#right').click(function(){
+      const x = parseInt($('#child').css('left'));
+      const parentWidth = parseInt($('#rango').innerWidth());
+      const childWidth = parseInt($('#child').innerWidth());
+
+      if((x+40) < (parentWidth - childWidth)){
+        $('#child').css('left',x+ 40);
+      }else{
+        $('#child').css('left', (parentWidth - childWidth));
+      }      
+    })
+
 });

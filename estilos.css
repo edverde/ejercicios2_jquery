@@ -126,9 +126,28 @@ main{
 .color_contain{
     width: 100px;
     height: 100px;
-    border: solid 2px #0d0d0d;
+    border: solid 2px var(--terciario);
     border-radius: 50%;
     
+}
+/* ------------------ ejercicio 4 ------------------------------------ */
+#rango{
+    margin:20px 0px;
+    width: 750px;
+    height: 500px;
+    border: 2px solid var(--terciario);
+    border-radius: 25px;
+    position: relative;
+}
+#child{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 150px;
+    height: 150px;
+    border: 2px solid var(--terciario);
+    border-radius: 20px;
+    background-color: var(--secundario);
 }
 /*------------------------------------ footer ----------------------------------------------*/
 footer {
