@@ -128,7 +128,7 @@ main{
     height: 100px;
     border: solid 2px var(--terciario);
     border-radius: 50%;
-    
+    background-color: var(--secundario);
 }
 /* ------------------ ejercicio 4 ------------------------------------ */
 #rango{
@@ -138,6 +138,7 @@ main{
     border: 2px solid var(--terciario);
     border-radius: 25px;
     position: relative;
+    background-color: var(--secundario);
 }
 #child{
     position: absolute;
@@ -147,7 +148,7 @@ main{
     height: 150px;
     border: 2px solid var(--terciario);
     border-radius: 20px;
-    background-color: var(--secundario);
+    background-color: var(--primario);
 }
 /*------------------------------------ footer ----------------------------------------------*/
 footer {
