@@ -27,6 +27,9 @@ ol{
     margin: auto;
     font-size: 1rem;		
 }
+ul{
+    text-align: left
+}
 /*------------------------------------tablas----------------------------------------*/
 table{
     width: 80%;
@@ -39,7 +42,7 @@ td {
 }	
 /*-------------------------------boton----------------------------------------*/
 button {
-    width: 100px;
+    min-width: 100px;
     display: inline-block;
     padding:10px;
     border-radius: 4px;
@@ -53,6 +56,13 @@ button {
 }
 button:hover{
     background-color: #0d0d0d;
+    transition: 1s;
+}
+.code{
+    background-color: rgb(25, 107, 25)
+}
+.code:hover{
+    background-color: #1e3a1d;
     transition: 1s;
 }
 /*------------------------------body---------------------------------*/
@@ -106,8 +116,20 @@ main{
     padding: 60px 0px 60px;	
     background-color: var(--primario);			
 }	
-/*----------------------------- ejercicio 1 ---------------------------------------------*/
-
+/*----------------------------- ejercicio 2 ---------------------------------------------*/
+.center_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.color_contain{
+    width: 100px;
+    height: 100px;
+    border: solid 2px #0d0d0d;
+    border-radius: 50%;
+    
+}
 /*------------------------------------ footer ----------------------------------------------*/
 footer {
     padding: 80px;
